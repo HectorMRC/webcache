@@ -22,7 +22,7 @@ jobs:
           DEFAULT_BUMP: patch
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tagging.outputs.new_tag }}
           token: ${{ secrets.PAT }}
